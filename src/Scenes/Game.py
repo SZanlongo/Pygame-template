@@ -37,7 +37,7 @@ def run_game(width, height, fps, caption, starting_scene):
                 filtered_events.append(event)
 
         # Scene handling
-        active_scene.ProcessInput(filtered_events, pressed_keys,mpos)
+        active_scene.ProcessInput(filtered_events, pressed_keys, mpos)
         active_scene.Update()
         active_scene.Render(screen)
 
