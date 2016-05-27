@@ -1,10 +1,12 @@
-import Globals
+from src.Menus.MenuScene import *
 from src.Scenes.Game import *
 
 
 def main():
     # Run game
-    run_game(Globals.WINDOW_WIDTH, Globals.WINDOW_HEIGHT, Globals.FPS, Globals.WINDOW_CAPTION, TitleScene())
+    funcs = {}
+
+    run_game(gb.WINDOW_WIDTH, gb.WINDOW_HEIGHT, gb.FPS, gb.WINDOW_CAPTION, MenuScene(funcs))
 
 
 if __name__ == "__main__":

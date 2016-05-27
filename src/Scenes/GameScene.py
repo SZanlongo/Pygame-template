@@ -9,12 +9,13 @@ from SceneBase import *
 class GameScene(SceneBase):
     def __init__(self):
         SceneBase.__init__(self)
+        self.bg_color = Color('blue')
 
         # List of every sprite
         self.all_sprites_list = pygame.sprite.Group()
 
     # receive all the events that happened since the last frame
-    def ProcessInput(self, events, pressed_keys):
+    def ProcessInput(self, events, pressed_keys, mpos):
         pass
 
     # game logic
@@ -23,8 +24,8 @@ class GameScene(SceneBase):
 
     # render code
     def Render(self, screen):  # receive the main screen Surface as input
-        # The game scene is just a blank blue screen
-        screen.fill(Color("blue"))
+        # Redraw the background
+        screen.fill(self.bg_color)
 
         # Draw all the spites
         self.all_sprites_list.draw(screen)

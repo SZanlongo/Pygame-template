@@ -5,7 +5,7 @@ class SceneBase:
         self.next = self  # Next scene
 
     # receive all the events that happened since the last frame
-    def ProcessInput(self, events, pressed_keys):
+    def ProcessInput(self, events, pressed_keys, mpos):
         print("uh-oh, you didn't override this in the child class")
 
     # game logic

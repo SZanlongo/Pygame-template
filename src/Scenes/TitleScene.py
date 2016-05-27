@@ -6,8 +6,9 @@ from GameScene import *
 class TitleScene(SceneBase):
     def __init__(self):
         SceneBase.__init__(self)
+        self.bg_color = Color('red')
 
-    def ProcessInput(self, events, pressed_keys):
+    def ProcessInput(self, events, pressed_keys, mpos):
         for event in events:
             if event.type == pygame.KEYDOWN and event.key == pygame.K_RETURN:
                 # Move to the next scene when the user pressed Enter
@@ -19,5 +20,5 @@ class TitleScene(SceneBase):
 
     # render code
     def Render(self, screen):  # receive the main screen Surface as input
-        # For the sake of brevity, the title scene is a blank red screen
-        screen.fill(Color("red"))
+        # Redraw the background
+        screen.fill(self.bg_color)

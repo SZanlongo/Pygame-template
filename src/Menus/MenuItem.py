@@ -6,6 +6,7 @@ from pygame.locals import Color
 # https://nebelprog.wordpress.com/2013/09/02/create-a-simple-game-menu-with-pygame-pt-4-connecting-it-to-functions/
 class MenuItem(pygame.font.Font):
     def __init__(self, text, font=None, font_size=30, font_color=Color('white'), (pos_x, pos_y)=(0, 0)):
+        pygame.init()
         pygame.font.Font.__init__(self, font, font_size)
         self.text = text
         self.font_size = font_size
@@ -22,7 +23,8 @@ class MenuItem(pygame.font.Font):
         if (posx >= self.pos_x and posx <= self.pos_x + self.width) and \
                 (posy >= self.pos_y and posy <= self.pos_y + self.height):
             return True
-        return False
+        else:
+            return False
 
     def set_position(self, x, y):
         self.position = (x, y)
