@@ -1,0 +1,6 @@
+# Game Window
+# Dimensions
+WINDOW_WIDTH = 640
+WINDOW_HEIGHT = 480
+WINDOW_CAPTION = "My Game"
+FPS = 60
