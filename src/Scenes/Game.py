@@ -1,8 +1,8 @@
-from src.Scenes.TitleScene import *
+from src.scenes.TitleScene import *
 
 
 # run_game is based on Blake O'Hare's tutorial: "PyGame Basics Tutorial" at:
-# http://www.nerdparadise.com/tech/python/pygame/basics/
+# http://www.nerdparadise.com/tech/python/pygame/basics/part7/
 def run_game(width, height, fps, caption, starting_scene):
     pygame.init()
     screen = pygame.display.set_mode((width, height))  # Window dimensions

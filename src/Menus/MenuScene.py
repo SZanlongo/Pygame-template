@@ -1,9 +1,9 @@
 import sys
 
 import src.Globals as gb
-from src.Menus.MenuItem import *
-from src.Scenes.GameScene import *
 from src.Utils import *
+from src.menus.MenuItem import *
+from src.scenes.GameScene import *
 
 
 # MenuScene is based on Nebelhom's tutorial: "Create a simple game menu with pygame" at:

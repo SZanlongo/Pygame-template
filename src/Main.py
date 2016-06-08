@@ -1,5 +1,5 @@
-from src.Menus.MenuScene import *
-from src.Scenes.Game import *
+from src.menus.MenuScene import *
+from src.scenes.Game import *
 
 
 def main():

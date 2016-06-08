@@ -5,7 +5,7 @@ from SceneBase import *
 
 
 # GameScene is based on Blake O'Hare's tutorial: "PyGame Basics Tutorial" at:
-# http://www.nerdparadise.com/tech/python/pygame/basics/
+# http://www.nerdparadise.com/tech/python/pygame/basics/part7/
 class GameScene(SceneBase):
     def __init__(self):
         SceneBase.__init__(self)
